@@ -14,7 +14,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "babel-cli": "^6.26.0",
+    "@babel/cli": "^7.10.3",
     "bcrypt": "^4.0.1",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
@@ -28,7 +28,7 @@
     "mongoose": "^5.9.9"
   },
   "devDependencies": {
-    "@babel/core": "^7.9.0",
+    "@babel/core": "^7.10.3",
     "@babel/preset-env": "^7.9.5",
     "@babel/register": "^7.9.0",
     "babel-eslint": "^10.1.0",
