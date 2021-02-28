@@ -1,6 +1,7 @@
 import bodyParser from 'body-parser'
 import cors from 'cors'
 import session from 'express-session'
+
 import { app } from './server'
 import { connectDb, errorDb } from './services/db'
 import userRoute from './resources/user/user.router'
@@ -26,7 +27,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(
   session({
     //use sessions for tracking logins
-    secret: 'work hard',
+    secret: process.env.SESSION_SECRET,
     resave: true,
     saveUninitialized: false,
   }),
